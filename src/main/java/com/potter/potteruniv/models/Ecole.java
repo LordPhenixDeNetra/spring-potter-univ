@@ -19,7 +19,7 @@ public class Ecole{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String UUIDEcole;
+    private String uidEcole;
 
     @Column(length = 60)
     private String nomEcole;

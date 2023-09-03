@@ -1,6 +1,7 @@
 package com.potter.potteruniv.models;
 
 import com.potter.potteruniv.enums.PersonneType;
+import com.potter.potteruniv.enums.SexeType;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -18,14 +19,16 @@ public class Personne {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column
-    private String UUIDPersonne;
+    private String uidPersonne;
 
     @Column(length = 50)
     private String nomPersonne;
 
     @Column(length = 50)
     private String prenomPersonne;
+
+    @Enumerated
+    private SexeType sexePersonne;
 
     private Date naissance;
 

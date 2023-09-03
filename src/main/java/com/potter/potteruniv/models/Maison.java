@@ -19,7 +19,7 @@ public class Maison {
     private Long id;
 
     @Column
-    private String UUIDMaison;
+    private String uidMaison;
 
     @Column(length = 50)
     private String nomMaison;
